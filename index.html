@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo"><ul class="brand-text">
+              <li><a href="#" onclick="toggling()"><i class="fa-solid fa-house black-text fa-3xs"></i></a></li>
+              <li><br><p>/Pages</p></li>
+              <li><br>/Analyics</li>
+            </ul>
+         
+          
+                    
+
+        </a>
+        
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#">
+                    
+                    <form>
+                        <div class="input-field black-text">
+                          <input id="search" type="search" required>
+                          <label class="label-icon"><i class="material-icons black-text">search</i></label>
+                          <i class="material-icons">close</i>
+                        </div>
+                      </form>
+                </a></li>
+                <li><a href="#" onclick="show()">
+                    <i class="fa-solid fa-user fa-3xs black-text"></i>
+                </a></li>
+                <li><a href="#" onclick="show1()">
+                    <i class="fa-solid fa-gear fa-3xs black-text"></i>
+                </a></li>
+                <li><a href="#" onclick="notif()">
+                    <i class="fa-solid fa-bell fa-3xs black-text"></i>
+                </a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="form-1">
+        
+            
+            
+               <form>
+                <h1>Sign Up</h1>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <input type="button" value="Sign Up">
+               </form>
+       </div>
+       <div class="settings">
+           <h6>Select font size:</h6>
+           <input type="range"   min="12" max="26" name="" id="range" >
+           <button class="btn" onclick="rangeFont()">Change Font Size</button>
+          
+       </div>
+       <div class="notification">
+        You Have No Notification Now!!!
+        <a href="#" style="float: right;" onclick="notif()">
+            <i class="fa-solid fa-xmark fa-xl black-text"></i>
+        </a>
+       </div>
+        
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+          <div class="left-side">
+           
+            <ul class="sidebar-ul">
+                <li><img src="Vector.png" alt=""></li>
+                <li><p class="white-text">Material Dashboard 2 PRO</p></li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <ul class="sidebar-ul1">
+                <li><img src="Profile Picture.png" alt=""></li>
+                <li><p class="white-text">Brooklyn Alice</p></li>
+                <div class="drop">
+                    <ul>
+                        <li><i class="fa-solid fa-table-columns fa-3xs white-text"></i></li>
+                        <li><p class="white-text">Dashboards</p></li>
+                        <li><a onclick="drop1()" href="#"><i class="fa-solid fa-angle-down fa-3xs white-text"></i></a></li>
+                    </ul>
+                </div>
+                <div class="drop1">
+                    <ul>
+                        <li><i class="fa-solid fa-a fa-3xs white-text"></i></li>
+                        <li><p class="white-text">Analytics</p></li>
+                        <li><a onclick="drop1()" href="#"><i class="fa-solid fa-angle-up fa-3xs white-text"></i></a></li>
+                    </ul>
+                </div>
+                <li class="icons"><a href="#" onclick="drop()"><i class="fa-solid fa-angle-down fa-3xs white-text down"></i></a></li>
+            </ul>
+            <ul class="sidebar_ul">
+                <li><p class="white-text">S</p></li>
+                <li><p class="white-text">Smart Home</p></li>
+            </ul>
+            <br>
+            <p class="white-text">Pages</p>
+            <br>
+            <div class="page">
+                <ul class="page">
+                    <li><i class="fa-solid fa-image fa-3xs white-text"></i></li>
+                    <li class="white-text">Pages</li>
+                    <li><i class="fa-solid fa-angle-down fa-3xs white-text"></i></li>
+                </ul>
+            </div>
+            <br>
+            <div class="page">
+                <ul class="page">
+                    <li><i class="fa-solid fa-table-cells fa-3xs white-text"></i></li>
+                    <li class="white-text">Applications</li>
+                    <li><i class="fa-solid fa-angle-down fa-3xs white-text"></i></li>
+                </ul>
+            </div>
+            <br>
+            <div class="page">
+                <ul class="page">
+                    <li><i class="fa-solid fa-clipboard-list fa-3xs white-text"></i></li>
+                    <li class="white-text">Authentication</li>
+                    <li><i class="fa-solid fa-angle-down fa-3xs white-text"></i></li>
+                </ul>
+            </div>
+            <br>
+            <div class="page">
+                <ul class="page">
+                    <li><i class="fa-solid fa-cart-shopping fa-3xs white-text"></i></li>
+                    <li class="white-text">Ecommerce</li>
+                    <li><i class="fa-solid fa-angle-down fa-3xs white-text"></i></li>
+                </ul>
+            </div>
+            <br>
+            <div class="page">
+                <ul class="page">
+                    <li><i class="fa-solid fa-e fa-3xs white-text"></i></li>
+                    <li class="white-text">Error</li>
+                    <li><i class="fa-solid fa-angle-down fa-3xs white-text"></i></li>
+                </ul>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <p class="white-text">Docs</p>
+            <br>
+            <div class="page">
+                <ul class="page">
+                    <li><i class="fa-solid fa-list-ul fa-3xs white-text"></i></li>
+                    <li class="white-text">Basic</li>
+                    <li><i class="fa-solid fa-angle-down fa-3xs white-text"></i></li>
+                </ul>
+            </div>
+            <br>
+            <div class="page">
+                <ul class="page">
+                    <li><i class="fa-solid fa-cube fa-3xs white-text"></i></li>
+                    <li class="white-text">Components</li>
+                    <li><i class="fa-solid fa-angle-down fa-3xs white-text"></i></li>
+                </ul>
+            </div>
+            <br>
+            <div class="page">
+                <ul class="page">
+                    <li><i class="fa-solid fa-bars fa-3xs white-text"></i></li>
+                    <li class="white-text">Changelog</li>
+                    <li></li>
+                </ul>
+            </div>
+          </div>
+    </header>
+    <br>
+    <main>
+        <div class="container1">
+            <div class="content">
+                <div class="profile">
+                    <i class="fa-solid fa-user white-text"></i>
+                </div>
+                <p class="black-text">Bookings</p>
+                <h5><b class="purple-text text-darken-4">281</b></h5>
+                <hr style="border: 1px solid #F0F2F5; background-color: #F0F2F5;">
+                <br>
+                <p class="profit"><span class="green-text">+55%</span> than last week</p>
+                <br>
+            </div>
+            <div class="content">
+                <div class="profile1">
+                    <i class="fa-solid fa-chart-column white-text"></i>
+                </div>
+                <p class="black-text">Today`s users</p>
+                <h5><b class="purple-text text-darken-4">2300</b></h5>
+                <hr style="border: 1px solid #F0F2F5; background-color: #F0F2F5;">
+                <br>
+                <p class="profit"><span class="green-text">+3%</span> than last week</p>
+                <br>
+            </div>
+            <div class="content">
+                <div class="profile2">
+                    <i class="fa-solid fa-shop white-text"></i>
+                </div>
+                <p class="black-text">Revenue</p>
+                <h5><b class="purple-text text-darken-4">34K</b></h5>
+                <hr style="border: 1px solid #F0F2F5; background-color: #F0F2F5;">
+                <br>
+                <p class="profit"><span class="green-text">+1%</span> than yesterday</p>
+                <br>
+            </div>
+            <div class="content">
+                <div class="profile3">
+                    <i class="fa-solid fa-shop white-text"></i>
+                </div>
+                <p class="black-text">Followers</p>
+                <h5><b class="purple-text text-darken-4">+91</b></h5>
+                <hr style="border: 1px solid #F0F2F5; background-color: #F0F2F5;">
+                <br>
+                <p class="profit">Just Updated</p>
+                <br>
+            </div>
+            <br>
+           <div class="chart">
+            <canvas id="myChart" width="400px" height="400px"></canvas>
+            <h6 class="website"><b>Website Views</b></h6>
+            <p class="website_p">Last Campaign Performance</p>
+            <br>
+            <hr>
+            <br>
+            <p class="website_p">campaign sent 2 days ago</p>
+           </div>
+
+           <div class="chart">
+            <canvas id="myChart1" width="400px" height="400px"></canvas>
+            <h6 class="website"><b>Daily Sales</b></h6>
+            <p class="website_p">(+15%) increase in today sales.</p>
+            <br>
+            <hr>
+            <br>
+            <p class="website_p">campaign sent 2 days ago</p>
+           </div>
+
+           <div class="chart">
+            <canvas id="myChart2" width="400px" height="400px"></canvas>
+            <h6 class="website"><b>Daily Sales</b></h6>
+            <p class="website_p">(+15%) increase in today sales.</p>
+            <br>
+            <hr>
+            <br>
+            <p class="website_p">campaign sent 2 days ago</p>
+           </div>
+           <br>
+           <div class="table">
+               <h6 class="website">Top  Selling Products</h6>
+               <br>
+             <div class="ul">
+                <ul class="ul1">
+                    <li>PRODUCT</li>
+                    <li>VALUE</li>
+                    <li>ADS SPENT</li>
+                    <li>REFUNDS</li>
+                </ul>
+             </div>
+             <br>
+             <div class="ul">
+                 <ul>
+                     <li>
+                         <ul>
+                             <li><img src="image - product.png" alt=""></li>
+                             <li style="margin-top: -10px;margin-left: 10px;"><h6 class="website">Nike v22 Running</h6><p>8.232 orders</p></li>
+                         </ul>
+                     </li>
+                     <li>$130.992</li>
+                     <li>$9.500</li>
+                     <li>13</li>
+                 </ul>
+             </div>
+          
+             <br>
+             <div class="ul">
+                 <ul>
+                     <li>
+                         <ul>
+                             <li><img src="image - product1.png" alt=""></li>
+                             <li style="margin-top: -10px;margin-left: 10px;"><h6 class="website">Business Kit (Mug + Notebook)</h6><p>12.821 orders</p></li>
+                         </ul>
+                     </li>
+                     <li style="margin-left: -100px;">$80.250</li>
+                     <li>$4.200</li>
+                     <li>40</li>
+                 </ul>
+             </div>
+           </div>
+           
+        </div>
+    </main>
+   <footer>
+       <div class="footer">
+        <h6>© 2022, made with ♥ by Creative Tim for a better web.</h6>
+       </div>
+   </footer>
+    <script>
+        
+    const ctx = document.getElementById('myChart').getContext('2d');
+    
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 8, 3,4,1,9,6],
+                backgroundColor: [
+                    'rgba(255, 255, 255)',
+                    // 'rgba(54, 162, 235, 0.2)',
+                    // 'rgba(255, 206, 86, 0.2)',
+                    // 'rgba(75, 192, 192, 0.2)',
+                    // 'rgba(153, 102, 255, 0.2)',
+                    // 'rgba(255, 159, 64, 0.2)'
+                ],
+                borderRadius: 5,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                   
+                }
+            }
+        }
+    });
+  
+    const ctx1 = document.getElementById('myChart1').getContext('2d');
+    
+    const myChart1 = new Chart(ctx1, {
+        type: 'line',
+        data: {
+            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            datasets: [{
+                label: '# of Votes',
+                data: [200,400,600,500,350,800,610 ],
+                backgroundColor: [
+                    'rgba(255,255,255)',
+                    // 'rgba(54, 162, 235, 0.2)',
+                    // 'rgba(255, 206, 86, 0.2)',
+                    // 'rgba(75, 192, 192, 0.2)',
+                    // 'rgba(153, 102, 255, 0.2)',
+                    // 'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 255, 255)',
+                    // 'rgba(54, 162, 235, 1)',
+                    // 'rgba(255, 206, 86, 1)',
+                    // 'rgba(75, 192, 192, 1)',
+                    // 'rgba(153, 102, 255, 1)',
+                    // 'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                   
+                }
+            }
+        }
+    });
+
+    const ctx2 = document.getElementById('myChart2').getContext('2d');
+    
+    const myChart2 = new Chart(ctx2, {
+        type: 'line',
+        data: {
+            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            datasets: [{
+                label: '# of Votes',
+                data: [500,300,400,7600,310,900,110 ],
+                backgroundColor: [
+                    'rgba(255,255,255)',
+                    // 'rgba(54, 162, 235, 0.2)',
+                    // 'rgba(255, 206, 86, 0.2)',
+                    // 'rgba(75, 192, 192, 0.2)',
+                    // 'rgba(153, 102, 255, 0.2)',
+                    // 'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 255, 255)',
+                    // 'rgba(54, 162, 235, 1)',
+                    // 'rgba(255, 206, 86, 1)',
+                    // 'rgba(75, 192, 192, 1)',
+                    // 'rgba(153, 102, 255, 1)',
+                    // 'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                   
+                }
+            }
+        }
+    });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

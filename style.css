@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    width: 80%;
+    border: none;
+    box-shadow: none;
+    background-color: white;
+    margin-left: 20%;
+    
+}
+.nav-wrapper{
+    background: white;  
+    padding-left: 1%;
+    padding-right: 1%;
+    border: none;
+    box-shadow: none;
+  
+}
+.nav-wrapper a{
+    color: black;
+}
+.left-side{
+    width: 20%;
+    height: auto;
+    padding: 3%;
+    border-radius: 12px;
+    background-color: black;
+    position: absolute;
+    margin-top: -50px;
+    transition: all 1s ease-in-out;
+    
+}
+.brand-text li{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* identical to box height, or 20px */
+
+
+/* Linear/Dark Blue */
+
+color: #344767;
+
+}
+.alone{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 140%;
+/* or 22px */
+
+
+/* Linear/Dark Blue */
+
+color: #344767;
+
+}
+.sidebar-ul{
+    display: flex;
+}
+.sidebar-ul li{
+    margin-left: 5px;
+}
+hr{
+    color: white;
+    background-color: white;
+
+}
+.sidebar-ul1{
+    display: flex;
+    margin-left: -20px;
+}
+.sidebar-ul1 li{
+    margin-left: 30px;
+}
+.icons{
+    float: right;
+}
+.drop{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    display: none;
+    padding: 10px 30px;
+    background: #4F4F52;
+border-radius: 4px;
+
+
+}
+.drop ul{
+    display: flex;
+    margin-left: -20px;
+
+}
+.drop ul li{
+    margin-left: 25px;
+}
+.block{
+    display: block;
+
+    
+}
+.drop1{
+    
+        position: absolute;
+        margin-top: 90px;
+        margin-left: 30px;
+        display: none;
+        padding: 10px 40px;
+        background: #E91F63;
+border-radius: 4px;
+  
+    
+    
+    
+}
+.drop1 ul{
+    display: flex;
+    margin-left: -20px;
+
+}
+.drop1 ul li{
+    margin-left: 27px;
+}
+.block{
+    display: block;
+    
+}
+.sidebar_ul{
+    display: flex;
+    margin-top: 120px;
+    margin-left: -30px;
+}
+.sidebar_ul li{
+    margin-left: 50px;
+}
+.page ul{
+    display: flex;
+    justify-content: space-between;
+}
+.hided{
+   margin-left: -300px;
+   transition: all 1s ease-in-out;
+}
+.container1{
+    width: 80%;
+    margin-left: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.content{
+width: 23%;
+border-radius: 12px;
+padding: 10px 30px;
+background: #FFFFFF;
+/* drop-shadow-black */
+text-align: right;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+
+
+}
+.profile{
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(180deg, #3E3D45 0%, #202020 100%);
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+margin-top: -32px;
+}
+
+.profit{
+    text-align: left;
+}
+.profile1{
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(180deg, #E93B77 0%, #DA1F63 100%);
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+margin-top: -32px;
+}
+.profile2{
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(180deg, #63B967 0%, #4BA64F 100%);
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+margin-top: -32px;
+}
+.profile3{
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(180deg, #439DEE 0%, #1E78E9 100%);
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+margin-top: -32px;
+}
+.chart{
+    width: 30%;
+    height: auto;
+    padding: 10px 20px;
+    background: #FFFFFF;
+/* drop-shadow-black */
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+}
+.website{
+    font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+
+/* Linear/Dark Blue */
+
+color: #344767;
+}
+.website_p{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* identical to box height, or 20px */
+
+
+/* Linear/Grey */
+
+color: #7B809A;
+}
+#myChart{
+    background: linear-gradient(180deg, #E93B77 0%, #DA1F63 100%);
+    /* drop-shadow-red */
+    
+    box-shadow: 0px 2px 6px rgba(220, 34, 101, 0.36);
+    border-radius: 8px;
+  
+}
+#myChart1{
+    background: linear-gradient(180deg, #63B967 0%, #4BA64F 100%);
+/* drop-shadow-green */
+
+box-shadow: 0px 2px 6px rgba(79, 169, 83, 0.36);
+border-radius: 8px;
+}
+#myChart2{
+    background: linear-gradient(180deg, #3E3D45 0%, #202020 100%);
+/* drop-shadow-black */
+
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+}
+.table{
+    width: 100%;
+    padding: 10px 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: #FFFFFF;
+/* drop-shadow-black */
+
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+}
+.ul ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ul .ul1 li{
+margin-left: 180px;
+}
+.footer{
+    width: 80%;
+    margin-left: 20%;
+  padding: 1% 20px;
+}
+.form-1{
+     width: 320px;
+      background: #3e3d3d;
+       padding: 40px 20px;
+    position: absolute;
+    margin-left: 1600px;
+    transition: all 1s ease-in-out;
+    border-radius: 20px;
+    }
+h1{text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;
+}
+
+input{width: 100%; background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+
+input[type="button"]{ background: #bac675; border: 0; cursor: pointer; color: #3e3d3d;}
+input[type="button"]:hover{ background: #a4b15c; transition: .6s;}
+
+::placeholder{color: #fff;}
+.show{
+    margin-left: 1200px;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+.settings{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    padding: 10px 30px;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 1200px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    transition: all 1s ease-in-out;
+}
+.settings1{
+    margin-top: 20px;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+}
+.notification{
+    width: 350px;
+    height: 100px;
+    background-color: aqua;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px 30px;
+    position: absolute;
+    left: 40%;
+    margin-top: -400px;
+    transition: all 1s ease-in-out;
+}
+.notification1{
+    margin-top: 20px;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+}
